@@ -97,3 +97,13 @@
 
 // console.log(smallest([32, 8, 9, 10, 50, 90, 12, 23]));
 
+// Reverse a string
+function revString(str){
+    return str.split('').reverse().join('');
+}
+console.log(revString("tree"))
+
+function compress(str){
+}
+
+console.log(compress('aaaabbccc'))

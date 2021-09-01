@@ -13,8 +13,8 @@ class Unit extends Card{
     }
     attack(target){
         if(target instanceof Unit){
-            target.resilience - this.power
-            console.log(`${target.name} took ${this.power} damage`)
+            target.resilience -= this.power
+            // console.log(`${target.name} took ${this.power} damage`)
         } else {
             throw new Error('Target must be a unit!')
         }

@@ -25,16 +25,17 @@ const pokémon = Object.freeze([
 ]);
 
 // const bListPkmn = pokémon.filter( p => p.name[0] === "B");
+
 // const pkmnIds = pokémon.map( p => p.id )
 
 // const idDiv3 = pokémon.filter(p => p.id % 3 === 0)
 
 // const firePkm = pokémon.filter(type => type.types = ['fire'])
 
-const type2 = pokémon.filter(m => m.types.length > 2)
+const type2 = pokémon.filter(m => m.types)
 
-const pkmNames = pokémon.map((n) => n.name).sort()
+// const pkmNames = pokémon.map((n) => n.name).sort()
 
 
 
-console.log(pkmNames)
+console.log(type2)

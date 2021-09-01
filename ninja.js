@@ -35,14 +35,13 @@ class Sensei extends Ninja{
 
 const superSensei = new Sensei("Master Splinter");
 superSensei.speakWisdom();
-// -> "What one programmer can do in one month, two programmers can do in two months."
 superSensei.showStats();
 // -> "Name: Master Splinter, Health: 210, Speed: 10, Strength: 10"
 
 // Created instance of a class object
-// const chris = new Ninja('Chris', 10,)
+const chris = new Ninja('Chris', 10,)
 
-// console.log(chris.sayName())
-// console.log(chris.showStats())
-// chris.drinkSake()
-// console.log(chris.showStats())
+console.log(chris.sayName())
+console.log(chris.showStats())
+chris.drinkSake()
+console.log(chris.showStats())

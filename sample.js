@@ -54,6 +54,7 @@ console.log(sortedItems)
 
 const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a-b});
+// points.sort((a,b) => (a-b))
 
 console.log(points)
 
@@ -76,3 +77,36 @@ console.log(oFoods)
 const values = [1, 2, 3, 4, 5];
 const oddCubes = values.filter( val => val % 2 !==0 ).map( val => val**3 );
 console.log(oddCubes)
+
+// Currying
+function ninjaBelt(ninja) {
+    return function belt(beltColor) { //note the closure here!
+        console.log("Ninja " + ninja + " has earned a " + beltColor + " belt.");
+    }
+}
+ninjaBelt('Eileen')('black'); //note the double invocation here.
+
+
+// Closures
+// here we have a function called "Outer"
+function outer() {
+    let count = 0; // this is a count variable that is scoped to the function
+    // there is an inner function that increments count and then console logs it
+    function inner() {
+        count++;
+        console.log(count);
+    }
+    // we're returning the inner function
+    return inner;
+}
+
+const counter = outer();   // counter is the function that we returned from calling the outer function
+counter();                 // this will console.log "1"
+counter();                 // this will console.log "2"
+counter();                 // this will console.log "3"
+counter();                 // this will console.log "4"
+
+// so that means that the count variable still exists! 
+// and it is being changed even though we aren't inside of the Outer function!
+// can we access count out here?
+console.log(count); // doesn't work!

@@ -28,18 +28,25 @@ const pokémon = Object.freeze([
 
 // const pkmnIds = pokémon.map( p => p.id )
 
+// array of pokemon objects where the id is evenly divisible by 3
 // const idDiv3 = pokémon.filter(p => p.id % 3 === 0)
 
+// an array of pokémon objects that are "fire" type
 // const firePkm = pokémon.filter(type => type.types.includes('fire'))
 
+// an array of pokémon objects that have more than one type
 // const type2 = pokémon.filter(m => m.types.length > 1)
 
+// an array with just the names of the pokémon
 // const pkmNames = pokémon.map((n) => n.name).sort()
 
+// an array with just the names of pokémon with an id greater than 99
 // const pkmid = pokémon.filter(i => i.id > 99).map((n) => n.name)
 
+// an array with just the names of the pokémon whose only type is poison
 // const poisonPkm = pokémon.filter(p => p.types.includes("poison")).map(n => n.name)
 
+// an array containing just the first type of all the pokémon whose second type is "flying"
 // const flyingPkm = pokémon.filter(p => p.types.includes("flying")).map(n => n.types[0])
 
 const countPkm = pokémon.filter(p => p.types.includes('normal')).reduce()

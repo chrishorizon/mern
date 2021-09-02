@@ -30,12 +30,20 @@ const pokémon = Object.freeze([
 
 // const idDiv3 = pokémon.filter(p => p.id % 3 === 0)
 
-// const firePkm = pokémon.filter(type => type.types = ['fire'])
+// const firePkm = pokémon.filter(type => type.types.includes('fire'))
 
-const type2 = pokémon.filter(m => m.types)
+// const type2 = pokémon.filter(m => m.types.length > 1)
 
 // const pkmNames = pokémon.map((n) => n.name).sort()
 
+// const pkmid = pokémon.filter(i => i.id > 99).map((n) => n.name)
 
+// const poisonPkm = pokémon.filter(p => p.types.includes("poison")).map(n => n.name)
 
-console.log(type2)
+// const flyingPkm = pokémon.filter(p => p.types.includes("flying")).map(n => n.types[0])
+
+const countPkm = pokémon.filter(p => p.types.includes('normal')).reduce()
+
+const countPkm1 = pokémon.forEach((user) => user.id++);
+
+console.log(countPkm1)

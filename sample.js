@@ -110,3 +110,19 @@ counter();                 // this will console.log "4"
 // and it is being changed even though we aren't inside of the Outer function!
 // can we access count out here?
 console.log(count); // doesn't work!
+
+
+function revStr(str){
+    // return str.split('').reverse().join('')
+    let temp = '';
+    for(let i = str.length -1; i >= 0; i--){
+        temp += str[i]
+    }
+    return temp;
+}
+
+
+var halo = "Chris";
+
+console.log(revStr(halo))
+
